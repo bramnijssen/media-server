@@ -27,6 +27,10 @@ services:
       - ./config/deluge/:/config/
       - ./data/downloads/:/data/downloads/
 
+  flaresolverr:
+    image: flaresolverr/flaresolverr:latest
+    container_name: flaresolverr
+
   prowlarr:
     image: linuxserver/prowlarr:latest
     container_name: prowlarr
