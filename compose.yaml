@@ -34,6 +34,7 @@ services:
   flaresolverr:
     image: flaresolverr/flaresolverr:latest
     container_name: flaresolverr
+    network_mode: "service:gluetun"
 
   prowlarr:
     image: linuxserver/prowlarr:latest
